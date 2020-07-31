@@ -2,3 +2,6 @@ React client side with communication to Node/Express servers through a proxy. Di
 
 # Run client side
 npm start
+
+# Run server side in server repo
+node server.js OR nodemon server.js

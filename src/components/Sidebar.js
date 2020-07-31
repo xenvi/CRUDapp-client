@@ -32,19 +32,25 @@ const Menu = styled.ul`
     padding: 0;
     & .active {
         background: #6a43f7;
-        color: #d9cfff;
+        a {
+            color: #DCD6F0;
+        }
     }
 `;
 const MenuItem = styled.li`
     padding: 0.75rem 2rem;
-    display: flex;
-    justify-content: flex-start;
-    align-items: center;
     &:hover {
         cursor: pointer;
     }
     & svg {
         margin-right: 0.5rem;
+    }
+    & a {
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        text-decoration: none;
+        color: #AAA2C5;
     }
 `;
 
@@ -54,11 +60,11 @@ class Sidebar extends Component {
             <Wrapper>
                 <Logo>grow<span>flow</span></Logo>
                 <Menu>
-                    <MenuItem className="active"><MoodOutlinedIcon /> Employees</MenuItem>
-                    <MenuItem><MailOutlinedIcon/> Messages</MenuItem>
-                    <MenuItem><StoreOutlinedIcon/> Store</MenuItem>
-                    <MenuItem><FavoriteBorderOutlinedIcon/> Favorites</MenuItem>
-                    <MenuItem><SettingsOutlinedIcon/> Settings</MenuItem>
+                    <MenuItem className="active"><a href="https://www.growflow.com"><MoodOutlinedIcon /> Employees</a></MenuItem>
+                    <MenuItem><a href="https://www.growflow.com"><MailOutlinedIcon/> Messages</a></MenuItem>
+                    <MenuItem><a href="https://www.growflow.com"><StoreOutlinedIcon/> Store</a></MenuItem>
+                    <MenuItem><a href="https://www.growflow.com"><FavoriteBorderOutlinedIcon/> Favorites</a></MenuItem>
+                    <MenuItem><a href="https://www.growflow.com"><SettingsOutlinedIcon/> Settings</a></MenuItem>
                 </Menu>
             </Wrapper>
         )
